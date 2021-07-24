@@ -352,11 +352,11 @@ var form = $('#form').formValid({
 			"tests": [
 				{
 					"type": "null", 
-					"message": "Enter phone number"
+					"message": "Enter password"
 				},
 				{
-					"type": "phone", 
-					"message": "Your phone number is invalid"
+					"type": "phone && letters", 
+					"message": "Password should be in letters or numbers"
 				}
 			]
 		},
@@ -373,8 +373,8 @@ var form = $('#form').formValid({
 			"required": false,
 			"tests": [
 				{
-					"type": "number", 
-					"message": "Incorrect number"
+					"type": "letters", 
+					"message": "Invalid subject"
 				}
 			]
 		},
@@ -410,7 +410,7 @@ var form = $('#form').formValid({
 			"required": false,
 			"tests": [
 				{
-					"type": "postcode", 
+					"type": "number", 
 					"message": "Incorrect code"
 				}
 			]
